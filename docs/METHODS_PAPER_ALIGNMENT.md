@@ -1,10 +1,8 @@
-# 与原始论文方法对齐（GSE146912）
+# 方法对齐（GSE146912）
 
-## 论文信息（您所指原文）
+## 论文信息
 
 **课题常用中文表述**：肾小球壁层上皮细胞亚群组成及新月体形成的机制与治疗（**第一作者：刘文斌**；团队含 Xu AL 等）。
-
-**期刊正式英文题名**：*Single cell landscape of parietal epithelial cells in healthy and diseased states*（Liu WB *et al.*）。
 
 | 项目 | 内容 |
 |------|------|
