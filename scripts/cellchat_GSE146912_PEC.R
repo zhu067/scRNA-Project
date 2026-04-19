@@ -1,7 +1,7 @@
-# CellChat（R）：与刘文斌等 Kidney International 2023（GSE146912, PMID 37100348；
+# CellChat（R）
 # 「肾小球壁层上皮细胞亚群与新月体形成机制及治疗」相关单细胞研究）中
 # glomerular cell–cell communication 分析方向一致的主路径。
-# Python 管线中的 LIANA 为可选补充，不等价于原文 CellChat 结果。
+# Python 管线中的 LIANA 为可选补充。
 #
 # 对照 vs 肾炎：分别对 meta$injury_group == "control" / "nephritis" 子集构建 CellChat，
 # 再使用 CellChat::netVisual_diffInteraction 等函数比较（见文末提示）。
