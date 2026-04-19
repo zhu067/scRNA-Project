@@ -1,0 +1,12 @@
+# conda 环境示例（请按需调整 Python 版本）
+name: scrna_gse146912
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -e ".[full]"
+      - pybiomart
+      - scrublet

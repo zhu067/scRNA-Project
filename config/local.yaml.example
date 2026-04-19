@@ -1,0 +1,29 @@
+# 复制为 config/local.yaml 后按需修改（不要提交含机器路径的 local.yaml 若需保密）
+#
+# 与 Liu WB 等 Kidney Int 2023 论文级复现：可再叠加 config/liu2023_kidney_int.yaml，并按原文 PDF
+# 填写 qc.filter_*、hvg_n_top_genes 等（见 docs/METHODS_PAPER_ALIGNMENT.md）。
+#
+# project:
+#   root: /your/path/to/scRNA_Project
+
+paths:
+  raw_h5ad: results/GSE146912_Merged_Raw.h5ad
+  output_run_dir: results/GSE146912_run
+
+processing:
+  hvg_n_top_genes: 3000
+  batch_key: batch
+
+leiden:
+  resolution: 0.5
+
+injury_comm:
+  enabled: true   # 导出对照/肾炎 symbol h5ad，供 R CellChat（见 scripts/cellchat_GSE146912_PEC.R）
+  liana:
+    enabled: false  # 与论文不等价；仅探索时改为 true 并 pip install liana
+
+qc:
+  filter_min_genes: 200
+  filter_max_mito_pct: 20
+  scrublet:
+    enabled: false
