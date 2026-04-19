@@ -3,7 +3,6 @@
 ##  accession
 
 - **GEO**: [GSE146912](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146912)
-- **关联论文**：刘文斌（Liu WB）等，*Kidney International* 2023（单细胞解析壁层上皮细胞亚群与新月体相关机制；见 [METHODS_PAPER_ALIGNMENT.md](METHODS_PAPER_ALIGNMENT.md)）。
 - 数据：小鼠肾小球单细胞，含健康与多种损伤模型样本。
 
 ## 本仓库期望的输入文件
@@ -14,7 +13,7 @@
 |-------------------|------|
 | `results/GSE146912_Merged_Raw.h5ad` | 合并后的 AnnData；`obs` 至少含 `Sample`、`batch`；`var` 为小鼠 **Ensembl** 基因 ID |
 
-请将你方预处理得到的合并矩阵放到该路径，或修改配置中的 `paths.raw_h5ad`。
+请将预处理得到的合并矩阵放到该路径，或修改配置中的 `paths.raw_h5ad`。
 
 ## 从 GEO 自行下载时的提示
 
@@ -30,7 +29,7 @@
 
 - 样本名中含 `nephritis` 的模型在文献中为 **NTS（肾毒性血清肾炎）**，与临床 **抗 GBM** 不同；比较分组见配置 `injury_comm` 中的 token。
 
-## 与论文一致的分析入口
+## 分析入口
 
 - 方法学、结果验收与主流程（SCENIC + CellChat）：**[METHODS_PAPER_ALIGNMENT.md](METHODS_PAPER_ALIGNMENT.md)**。
 - 命令行推荐覆盖层：**`config/liu2023_kidney_int.yaml`**（与 `default.yaml` 联用；QC 等仍按原文在 `local.yaml` 补全）。
