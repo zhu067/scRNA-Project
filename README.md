@@ -1,4 +1,4 @@
-# GSE146912 肾小球单细胞 — 可复现流程
+# GSE146912 肾小球单细胞 —流程
 
 本仓库提供 **统一配置 + Python 包 + 命令行入口**，用于从合并 `h5ad` 重跑预处理、聚类、注释、PEC 亚群与肾炎相关导出分析。
 **转录因子调控用 SCENIC（推荐 pySCENIC）**，**细胞通讯用 CellChat（R）**；正式引用与 DOI 见 **[docs/METHODS_PAPER_ALIGNMENT.md](docs/METHODS_PAPER_ALIGNMENT.md)**。Python 中的 DoRothEA+ULM、LIANA 仅作探索性补充，默认不替代上述流程。
