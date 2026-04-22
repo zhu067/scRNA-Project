@@ -1,0 +1,16 @@
+paths:
+  raw_h5ad: results/GSE146912_Merged_Raw.h5ad
+  output_run_dir: results/GSE146912_run
+
+injury_comm:
+  enabled: true
+  liana:
+    enabled: false
+
+event_flow:
+  enabled: true
+  cellchat_diff_dir: PEC_injury_comm/cellchat_R_diff/diff
+
+flowsig:
+  enabled: true
+  cellchat_diff_dir: PEC_injury_comm/cellchat_R_diff/diff
