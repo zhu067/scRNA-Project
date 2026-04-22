@@ -1,0 +1,8 @@
+{
+  "out_dir": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/event_flow",
+  "edges_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/event_flow/edges_delta.csv",
+  "nodes_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/event_flow/nodes_flow.csv",
+  "paths_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/event_flow/paths_topk.csv",
+  "figure_png": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/event_flow/event_flow_overview.png",
+  "weight_matrix_used": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/cellchat_R_diff/diff/cellchat_diff_weight_matrix.csv"
+}

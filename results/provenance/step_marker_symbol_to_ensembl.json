@@ -1,0 +1,44 @@
+{
+  "species": "mouse",
+  "n_symbols_requested": 35,
+  "n_symbols_mapped_to_ensembl": 35,
+  "symbol_mapping_coverage": 1.0,
+  "missing_symbols": [],
+  "per_cell_type": {
+    "POD": {
+      "n_genes_requested": 6,
+      "n_genes_mapped": 6,
+      "coverage": 1.0
+    },
+    "PEC": {
+      "n_genes_requested": 7,
+      "n_genes_mapped": 7,
+      "coverage": 1.0
+    },
+    "TEC": {
+      "n_genes_requested": 6,
+      "n_genes_mapped": 6,
+      "coverage": 1.0
+    },
+    "END": {
+      "n_genes_requested": 4,
+      "n_genes_mapped": 4,
+      "coverage": 1.0
+    },
+    "MES": {
+      "n_genes_requested": 4,
+      "n_genes_mapped": 4,
+      "coverage": 1.0
+    },
+    "SMC": {
+      "n_genes_requested": 4,
+      "n_genes_mapped": 4,
+      "coverage": 1.0
+    },
+    "IMM": {
+      "n_genes_requested": 4,
+      "n_genes_mapped": 4,
+      "coverage": 1.0
+    }
+  }
+}

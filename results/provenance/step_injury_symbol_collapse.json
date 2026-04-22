@@ -1,0 +1,21 @@
+{
+  "collapse": {
+    "n_genes_x": 3000,
+    "n_symbols_unique": 52560,
+    "n_raw_genes": 52636,
+    "used_separate_raw_matrix": true,
+    "extra": {
+      "n_ensembl_ids_queried": 52636,
+      "n_ids_with_symbol": 52636,
+      "id_to_symbol_coverage": 1.0
+    }
+  },
+  "injury_stats": {
+    "n_cells_total": 81648,
+    "n_cells_injury_comparison": 34868,
+    "injury_group_counts": {
+      "nephritis": 20479,
+      "control": 14389
+    }
+  }
+}

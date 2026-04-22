@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "started_at_utc": "2026-04-22T09:29:49.865848+00:00",
+    "config_snapshot": {
+      "project": {
+        "random_seed": 0,
+        "root": null
+      },
+      "paths": {
+        "raw_h5ad": "results/GSE146912_Merged_Raw.h5ad",
+        "output_run_dir": "results/GSE146912_run",
+        "figures_subdir": "figures",
+        "tables_subdir": "tables",
+        "provenance_subdir": "provenance"
+      },
+      "provenance": {
+        "hash_input_full_file": false,
+        "write_manifest": true
+      },
+      "normalization": {
+        "xmax_skip_normalize": 100.0,
+        "target_sum": 10000,
+        "xmax_sample_step": 8000
+      },
+      "processing": {
+        "batch_key": "batch",
+        "hvg_n_top_genes": 3000,
+        "hvg_flavor": "seurat",
+        "hvg_subset": true,
+        "scale_max_value": 10,
+        "scale_zero_center": false,
+        "pca_solver": "arpack",
+        "n_neighbors": 15,
+        "n_pcs_neighbors": 40,
+        "umap": true
+      },
+      "leiden": {
+        "resolution": 0.5,
+        "key_added": "leiden",
+        "flavor": "igraph",
+        "n_iterations": 2
+      },
+      "annotation": {
+        "score_margin_lowconf": 0.03,
+        "marker_sets": {
+          "POD": [
+            "Nphs1",
+            "Nphs2",
+            "Thsd7a",
+            "Pdpn",
+            "Wt1",
+            "Mafb"
+          ],
+          "PEC": [
+            "Cldn1",
+            "Dkk3",
+            "Akap12",
+            "Pax8",
+            "Pax2",
+            "Krt8",
+            "Krt18"
+          ],
+          "TEC": [
+            "Fxyd2",
+            "Umod",
+            "Aqp2",
+            "Aqp3",
+            "Slc12a1",
+            "Slc12a3"
+          ],
+          "END": [
+            "Flt1",
+            "Tie1",
+            "Pecam1",
+            "Kdr"
+          ],
+          "MES": [
+            "Gata3",
+            "Pdgfrb",
+            "Des",
+            "Itga8"
+          ],
+          "SMC": [
+            "Acta2",
+            "Ren1",
+            "Myh11",
+            "Tagln"
+          ],
+          "IMM": [
+            "Cd68",
+            "Cd14",
+            "Ptprc",
+            "Cd3d"
+          ]
+        },
+        "mygene_species": "mouse"
+      },
+      "qc": {
+        "mito_biomart_org": "mmusculus",
+        "mito_attrname": "ensembl_gene_id",
+        "annotate_mito": true,
+        "filter_min_genes": null,
+        "filter_max_genes": null,
+        "filter_min_counts": null,
+        "filter_max_mito_pct": null,
+        "scrublet": {
+          "enabled": false,
+          "expected_doublet_rate": 0.06,
+          "note": "Prefer raw counts for Scrublet; if xmax_skip_normalize triggered, scrublet may be skipped."
+        }
+      },
+      "batch_balance": {
+        "min_fraction_warn": 0.02
+      },
+      "pec_subcluster": {
+        "enabled": true,
+        "hvg_n_top_genes": 2500,
+        "n_neighbors": 15,
+        "n_pcs_max": 40,
+        "leiden_resolutions": {
+          "r04": 0.4,
+          "r08": 0.8
+        },
+        "default_cluster_key": "leiden_pec_r08",
+        "scale_max_value": 10
+      },
+      "injury_comm": {
+        "enabled": true,
+        "control_token": "control",
+        "nephritis_token": "nephritis",
+        "liana": {
+          "enabled": false,
+          "resource_name": "mouseconsensus",
+          "expr_prop": 0.1
+        },
+        "dorothea_levels": [
+          "A",
+          "B"
+        ]
+      },
+      "event_flow": {
+        "enabled": true,
+        "cellchat_diff_dir": "PEC_injury_comm/cellchat_R_diff/diff",
+        "weight_matrix_csv": "cellchat_diff_weight_matrix.csv",
+        "top_k_paths": 15,
+        "max_path_length": 4,
+        "path_use_positive_delta_only": true,
+        "pec_node_activity_csv": null
+      },
+      "flowsig": {
+        "enabled": true,
+        "cellchat_diff_dir": "PEC_injury_comm/cellchat_R_diff/diff",
+        "weight_matrix_csv": "cellchat_diff_weight_matrix.csv",
+        "positive_delta_only": true,
+        "top_k_paths": 15,
+        "max_path_length": 4
+      },
+      "outputs": {
+        "analyzed_h5ad": "GSE146912_merged_analyzed.h5ad",
+        "pec_h5ad": "GSE146912_PEC_reclustered.h5ad",
+        "cellchat_export_h5ad": "GSE146912_for_CellChat_symbol_injury.h5ad"
+      }
+    }
+  },
+  "steps": [
+    {
+      "step": "init",
+      "timestamp_utc": "2026-04-22T09:29:49.865899+00:00",
+      "n_cells_before": null,
+      "n_cells_after": null,
+      "n_vars": null,
+      "parameters": {
+        "random_seed": 0,
+        "stages": [
+          "flowsig"
+        ],
+        "config_path": "config/default.yaml"
+      }
+    },
+    {
+      "step": "load_analyzed_skipped",
+      "timestamp_utc": "2026-04-22T09:29:49.866539+00:00",
+      "n_cells_before": null,
+      "n_cells_after": null,
+      "n_vars": null,
+      "parameters": {},
+      "reason": "stages_do_not_need_h5ad"
+    },
+    {
+      "step": "flowsig",
+      "timestamp_utc": "2026-04-22T09:29:55.109000+00:00",
+      "n_cells_before": null,
+      "n_cells_after": null,
+      "n_vars": null,
+      "parameters": {},
+      "flowsig_version": "0.5.5",
+      "weight_matrix_used": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/cellchat_R_diff/diff/cellchat_diff_weight_matrix.csv",
+      "out_dir": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig",
+      "edges_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_edges.csv",
+      "nodes_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_nodes.csv",
+      "paths_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_paths_topk.csv",
+      "figure_png": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_overview.png"
+    }
+  ]
+}

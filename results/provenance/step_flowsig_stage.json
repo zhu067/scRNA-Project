@@ -1,0 +1,9 @@
+{
+  "flowsig_version": "0.5.5",
+  "weight_matrix_used": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/cellchat_R_diff/diff/cellchat_diff_weight_matrix.csv",
+  "out_dir": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig",
+  "edges_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_edges.csv",
+  "nodes_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_nodes.csv",
+  "paths_csv": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_paths_topk.csv",
+  "figure_png": "/mnt/newdisk/GDN1/scRNA_Project/results/GSE146912_run/tables/PEC_injury_comm/flowsig/flowsig_overview.png"
+}

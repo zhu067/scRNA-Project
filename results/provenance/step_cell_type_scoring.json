@@ -1,0 +1,21 @@
+{
+  "cell_types_scored": [
+    "POD",
+    "PEC",
+    "TEC",
+    "END",
+    "MES",
+    "SMC",
+    "IMM"
+  ],
+  "skipped": [],
+  "score_columns": [
+    "score_POD",
+    "score_PEC",
+    "score_TEC",
+    "score_END",
+    "score_MES",
+    "score_SMC",
+    "score_IMM"
+  ]
+}

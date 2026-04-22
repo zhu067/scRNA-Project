@@ -1,0 +1,5 @@
+{
+  "level": "warning",
+  "message": "Skipped normalize_total + log1p (input X appears already log/scaled per heuristic). For Liu WB et al. Kidney Int 2023 parity, verify raw-count vs preprocessed input against paper Methods; see docs/METHODS_PAPER_ALIGNMENT.md. SCENIC/pySCENIC inputs must follow that tool's requirements separately.",
+  "xmax_approx": 12.913447380065918
+}
