@@ -1,15 +1,15 @@
-# GSE146912 肾小球单细胞 — 可复现流程
+# GSE146912 肾小球单细胞 — 分析流程构建
 
 本仓库提供 **统一配置 + Python 包 + 命令行入口**，用于从合并 `h5ad` 重跑预处理、聚类、注释、PEC 亚群与肾炎相关导出分析。
-**转录因子调控用 SCENIC（推荐 pySCENIC）**，**细胞通讯用 CellChat（R）**；正式引用与 DOI 见 **[docs/METHODS_PAPER_ALIGNMENT.md](docs/METHODS_PAPER_ALIGNMENT.md)**。Python 中的 DoRothEA+ULM、LIANA 仅作探索性补充，默认不替代上述流程。
+**转录因子调控用 SCENIC（推荐 pySCENIC）**，**细胞通讯用 CellChat（R）**；正式引用与 DOI 见 **[docs/METHODS_PAPER_ALIGNMENT.md](docs/METHODS_PAPER_ALIGNMENT.md)**。
 
 ## 目录结构
 
 ```
-config/                 # default.yaml、liu2023_kidney_int.yaml（论文对齐覆盖）、可选 local.yaml
+config/                 # default.yaml、liu2023_kidney_int.yaml、可选 local.yaml
 docs/DATA_DOWNLOAD.md # 数据下载与输入文件说明
 docs/METHODS_PAPER_ALIGNMENT.md 
-src/gse146912_pipeline/  # 共用逻辑（注释、基因折叠、QC、PEC、通讯）
+src/gse146912_pipeline/  # （注释、基因折叠、QC、PEC、通讯）
 scripts/run_pipeline.py    # 主入口
 results/                # 默认输出根（含 h5ad、figures、tables）
 ```
